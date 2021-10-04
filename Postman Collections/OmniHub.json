@@ -3443,22 +3443,22 @@
         {
           "listen": "prerequest",
           "script": {
+            "id": "4aeff35b-77e1-4efd-a94e-e2f88f42d89a",
             "exec": [
               ""
             ],
-            "type": "text/javascript",
-            "id": "4aeff35b-77e1-4efd-a94e-e2f88f42d89a"
+            "type": "text/javascript"
           }
         },
         {
           "listen": "test",
           "script": {
+            "id": "e1d7cd95-c4cb-4676-bbb9-914d4816c876",
             "exec": [
               "var jsonData = JSON.parse(responseBody);\r",
               "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
             ],
-            "type": "text/javascript",
-            "id": "e1d7cd95-c4cb-4676-bbb9-914d4816c876"
+            "type": "text/javascript"
           }
         }
       ],
@@ -3477,7 +3477,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DirectTopup\",\r\n  \"transactAmount\": 500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0820012345\",\r\n    \"MobileNetwork\": \"VirginMobile\",\r\n    \"Barcode\": \"6009711053255\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DirectTopup\",\r\n  \"transactAmount\": 500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0820012345\",\r\n    \"MobileNetwork\": \"VirginMobile\",\r\n    \"Barcode\": \"6009711053255\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CCFoods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
         },
         "url": "{{baseUrl}}/merchandise/purchase"
       },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "e73474c3-9ced-4c1c-a139-450ce77f506c",
+      "id": "d4a1cb1d-072f-435b-8d93-2ab50cedd3cc",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "49708842-2e71-4890-aad6-ad40dca45fa6",
+      "id": "1d7041d8-c1bd-4047-9b56-2008d7b86f3c",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "a3ab3b3a-f638-48e4-a6e6-e528934bc137",
+      "id": "7676947e-5975-4994-8bb0-566dae498135",
       "key": "oneforyou_transact_id",
       "value": ""
     }
