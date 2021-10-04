@@ -3408,11 +3408,11 @@
         {
           "listen": "prerequest",
           "script": {
+            "id": "fadfcd39-c7a5-4f08-897b-231367891140",
             "exec": [
               ""
             ],
-            "type": "text/javascript",
-            "id": "fadfcd39-c7a5-4f08-897b-231367891140"
+            "type": "text/javascript"
           }
         }
       ],
@@ -3431,7 +3431,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 0,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"{{electricityMeterNumber}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"SolarD\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
+          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 0,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"{{electricityMeterNumber}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
         },
         "url": "{{baseUrl}}/merchandise/reprint"
       },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "83fbedab-309c-4dde-8db6-aec9bb7529c0",
+      "id": "e73474c3-9ced-4c1c-a139-450ce77f506c",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "0a3588ee-05e7-436c-8702-87777b6e89cb",
+      "id": "49708842-2e71-4890-aad6-ad40dca45fa6",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "c3e831c6-cdee-4700-aebf-166061caaf0a",
+      "id": "a3ab3b3a-f638-48e4-a6e6-e528934bc137",
       "key": "oneforyou_transact_id",
       "value": ""
     }
