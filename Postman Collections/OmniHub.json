@@ -1,0 +1,3832 @@
+{
+  "info": {
+    "_postman_id": "040f6159-8865-472c-80c3-5430e5d1649f",
+    "name": "OmniHubV3Regression",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "EasyPay",
+      "item": [
+        {
+          "name": "EasyPay Info (EasyPay Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "e8829786-1127-4966-b9c9-edf3d310cff4"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "6e34c7ae-ded4-4717-9b3b-ddb161ab2839"
+              }
+            }
+          ],
+          "_postman_id": "96bbb0f7-252d-4b36-b550-240eab902cdc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"9413542610672257\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Info (Notice Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "8734a54e-cd24-44e6-9521-784a7a33ffcc"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "2471466f-e47b-4310-b6b8-2c5a53d3e84b"
+              }
+            }
+          ],
+          "_postman_id": "676f1b46-4d0c-461c-aa63-2a578ebb21e1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"TrafficFine\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"NoticeNumber\",\r\n    \"BillPaymentIdValue\": \"C9/37724/801/076378\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Info (BoxOffice - SA Id)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "e00166dc-40f3-4dce-952f-fef41266ef6b"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "5b427af5-dbe5-4d49-9103-736589d292cd"
+              }
+            }
+          ],
+          "_postman_id": "ac129a22-eeda-407a-a0f7-6ac1185376d1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceBoxOffice\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"8910305313084\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Info (BoxOffice - Smart Card Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "3a6919ae-7916-43f1-a6fb-337d889482c4"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "52499d2e-3d0d-4204-83c2-ed6f5f620b29"
+              }
+            }
+          ],
+          "_postman_id": "3eab8c68-d8d4-49cf-81eb-ccc24202f503",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceBoxOffice\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SmartCardNumber\",\r\n    \"BillPaymentIdValue\": \"4101373184\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Info (BoxOffice - Customer Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "2fefda9f-8605-4b0e-9549-64acffd16a5c"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "1771dc29-905e-4931-ac09-97a8cb672b41"
+              }
+            }
+          ],
+          "_postman_id": "f766dafe-7ccf-455f-9b0f-d10020580715",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceBoxOffice\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"CustomerNumber\",\r\n    \"BillPaymentIdValue\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Info (Subscription - SA Id)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "bbdf41d3-6542-49ab-b93f-06f42a590899"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "4d7d9932-e192-492d-b2de-609f4758a7f5"
+              }
+            }
+          ],
+          "_postman_id": "60ecf24a-0a2e-415d-80d3-e2314f0c2dcf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceSubscription\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"6606068950086\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Info (Subscription - Smart Card Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "0b911f4a-f970-4a6c-8b31-755270f9820f",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "af3c7b7d-e675-4357-99ca-a922824877cd",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "_postman_id": "af06bbfc-dd70-4ade-a461-c457ea1be995",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceSubscription\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SmartCardNumber\",\r\n    \"BillPaymentIdValue\": \"4101373184\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Info (Subscription - Customer Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "e2b02e81-cb2e-45c0-ae72-c040c5ac4495"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "c3debf42-df57-4e00-928d-37af93678785"
+              }
+            }
+          ],
+          "_postman_id": "cfd71b10-8ad6-4afe-9ca2-73e7b3f295a4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceSubscription\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"CustomerNumber\",\r\n    \"BillPaymentIdValue\": \"40006229\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Payment (EasyPay Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "f8700557-ea2d-4337-8147-94cb1cf854cd"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"ep_payment_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "28ed742f-c020-4386-9ce2-79c745c17b7b"
+              }
+            }
+          ],
+          "_postman_id": "5526f8a7-1798-4e31-b9a1-4ee6046361ef",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"911152058894797\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n\r\n",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Payment Advice (EasyPay Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "12e1dd35-dfbc-4ec4-a94e-f18f9fdeed83"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "cdab7b06-4b44-4f08-a5b7-a926023ba67d"
+              }
+            }
+          ],
+          "_postman_id": "bf5969a2-baef-4370-9927-e8069255430d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_payment_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"tenderData\": \r\n     {\r\n      \"type\": \"CreditCard\",\r\n      \"amount\": 15000,\r\n      \"maskedPAN\": \"52212900000001945\",\r\n      \"reference\": \"1234567\"\r\n    }  ,  \r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"9413542610672257\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n ",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Refund (Original Transact ID)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "1f0adcf2-de11-4f73-bb2e-fa30080d829e"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"ep_refund_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "7e09ab8c-7386-4de2-962e-762340306ee0"
+              }
+            }
+          ],
+          "_postman_id": "13bc4353-d8bc-4bfd-be63-008408a4ea9f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n   \"OriginalTransactId\":\"{{ep_payment_transact_guid}}\"\r\n  },\r\n  \"comment\": \"duplication\",\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n\r\n",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/refund"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Payment Reversal (EasyPay Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "a78ae4db-30de-4de0-962c-60071f107aba"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "49d0dcce-efb7-45c9-b56e-acc1808e5cb0"
+              }
+            }
+          ],
+          "_postman_id": "3cc3f105-be5e-4aee-84fb-c6124d50e458",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_payment_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ReversalRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"911152058894797\"\r\n  },\r\n   \"comment\":\"timeout\",\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Refund Reversal",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "e9ac7b1a-ea75-4e75-8de3-2c843809ed20"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "169328f9-9c8a-4250-80f1-d4f281b3fa51"
+              }
+            }
+          ],
+          "_postman_id": "05215fb1-5b0b-4eb1-8b18-50c19a07244e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_refund_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ReversalRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BillPayment\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n   \"OriginalTransactId\":\"{{ep_refund_transact_guid}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/refund"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Refund Advice",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "95303be9-6fc5-4205-be86-85f9fb6ebf47"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "5d51e54c-cfba-4854-9c52-982b793bc1c8"
+              }
+            }
+          ],
+          "_postman_id": "b6182d40-0c7b-491c-a1a4-8dc195be12c6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_refund_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n   \"OriginalTransactId\":\"{{ep_refund_transact_guid}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/refund"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Payment (Notice Number)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "695b81f4-3c9d-4aae-acab-f342e873a980"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "a4cafc54-c498-49e8-8206-0488c89b3d43"
+              }
+            }
+          ],
+          "_postman_id": "a4d028bc-8e93-4af4-823c-3d7493fbff51",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"TrafficFine\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"NoticeNumber\",\r\n    \"BillPaymentIdValue\": \"10/00001/141/000153\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Payment Advice (NoticeNumber)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "c8fa4cf0-b5b1-4b21-a952-25b68d105cca"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "9dbdae45-2f10-4981-9de7-f227645dbaf1"
+              }
+            }
+          ],
+          "_postman_id": "0cb6cf6a-5d19-4bca-b49e-8c82f36dbac7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_payment_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"tenderData\": \r\n     {\r\n      \"type\": \"CreditCard\",\r\n      \"amount\": 15000,\r\n      \"maskedPAN\": \"52212900000001945\",\r\n      \"reference\": \"1234567\"\r\n    }  ,  \r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"9413542610672257\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n ",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Payment (BoxOffice - SA Id)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "be8c0d0b-3258-47b8-8362-fd11dab7d08b"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"ep_payment_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "4b44049f-b750-4acc-84b6-35c2a129f5c4"
+              }
+            }
+          ],
+          "_postman_id": "c51448f0-7bc8-4560-a085-720fd66fa9cb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceBoxOffice\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"8910305313084\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Payment Advice (BoxOffice - SA Id)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "6311675f-7f6d-469e-87a5-501747cf342b"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "d7afc2cc-b65d-4e6d-8672-2570260641d8"
+              }
+            }
+          ],
+          "_postman_id": "fe4fa53b-8411-4f84-ac58-2cf17d2e4313",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_payment_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BoxOffice\",\r\n  \"transactAmount\": 15000,\r\n  \"tenderData\": \r\n     {\r\n      \"type\": \"CreditCard\",\r\n      \"amount\": 15000,\r\n      \"maskedPAN\": \"52212900000001945\",\r\n      \"reference\": \"1234567\"\r\n    }  ,  \r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"8910305313084\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n ",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "EasyPay Payment (Subscription - SA Id)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "63b44e0c-d13a-461c-b835-eb8269b7276a"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "bc3d93cb-354c-4be0-9f00-c56d169816f1"
+              }
+            }
+          ],
+          "_postman_id": "670c55a9-db59-4364-a655-99c332fa58ea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceSubscription\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"6606068950086\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "983dd428-7db2-45ad-a3be-46bce4778f7a"
+    },
+    {
+      "name": "OneForYou",
+      "item": [
+        {
+          "name": "OneForYou Deposit",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  "//pm.collectionVariables.set(\"oneforyou_pin\", \"PIN\");"
+                ],
+                "type": "text/javascript",
+                "id": "fd8747e7-93b8-4ae2-aa64-c2b87f246870"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "874968f6-7b16-4b3d-b33e-91ba7dcaee52"
+              }
+            }
+          ],
+          "_postman_id": "4809029a-5f1e-44e1-9262-7ea3bebd2461",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 30000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/deposit"
+          },
+          "response": []
+        },
+        {
+          "name": "OneForYou Deposit Less than R1.00 (100)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "f63a70cd-f162-4a6a-a06b-ae18a4cbae69"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)"
+                ],
+                "type": "text/javascript",
+                "id": "8eb93d39-6bfd-462a-94d8-e5c75cff98b1"
+              }
+            }
+          ],
+          "_postman_id": "14957e43-ed07-4462-a38d-6fbf9c992ec1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 90,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/deposit"
+          },
+          "response": []
+        },
+        {
+          "name": "OneForYou Deposit More than R2500.00 (250000)",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "32fda3e8-6832-481c-b150-d418e6dc6109"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)"
+                ],
+                "type": "text/javascript",
+                "id": "f6f7434b-6fcc-4f42-afae-1f8352606ea2"
+              }
+            }
+          ],
+          "_postman_id": "d227040d-b3a1-4ec1-87e7-0fda65004207",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 250010,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/deposit"
+          },
+          "response": []
+        },
+        {
+          "name": "OneForYou Redeem",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "2efd6c84-c203-47d2-8b61-c592cca2effe"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_transact_guid\", jsonData.transactGuid)\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_transact_id\", jsonData.additionalData.ResponseData.TransactId)\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)\r",
+                  "\r",
+                  "//pm.collectionVariables.set(\"oneforyou_transact_guid\", jsonData.transactGuid)\r",
+                  "//pm.collectionVariables.set(\"oneforyou_transact_id\", jsonData.additionalData.ResponseData.TransactId)\r",
+                  "//pm.collectionVariables.set(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)"
+                ],
+                "type": "text/javascript",
+                "id": "a974b8ae-aee0-498f-8c58-61598849b65b"
+              }
+            }
+          ],
+          "_postman_id": "7ba7b477-8055-4cd1-95b1-6bd4ff3cdd74",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 00,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n     \"PIN\": \"{{oneforyou_pin}}\"\r\n },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "OneForYou Redeem All Deposited Amount",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "f657089e-4c99-4e1a-95ec-502857d64dd0"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_transact_guid\", jsonData.transactGuid)\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_transact_id\", jsonData.additionalData.ResponseData.TransactId)\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)"
+                ],
+                "type": "text/javascript",
+                "id": "4154db28-39e2-4fec-86f0-444d1aeee10e"
+              }
+            }
+          ],
+          "_postman_id": "5dbb166e-633a-49c7-80ed-6c6c7aceb3fb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 00,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n     \"PIN\": \"{{oneforyou_pin}}\"\r\n },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "OneForYou Redeem R150 token",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "51517034-1c7a-453e-8258-64f12d887b64"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_transact_guid\", jsonData.transactGuid)\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_transact_id\", jsonData.additionalData.ResponseData.TransactId)\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)"
+                ],
+                "type": "text/javascript",
+                "id": "1067b216-8194-4b46-a69a-fbc180943793"
+              }
+            }
+          ],
+          "_postman_id": "641359da-d4bd-41b7-916d-b972ecf5f584",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 1100,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n     \"PIN\": \"1234067110100642\"\r\n },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "OneForYou Reversal",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "f9ead37f-0889-463a-ab87-4dd81e3dc74e"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "69da5418-d734-417d-ab52-b9afd1722e60"
+              }
+            }
+          ],
+          "_postman_id": "1b78e315-4168-4144-9c6c-3fd05991ffba",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{oneforyou_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ReversalRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 100,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n     \"MobileNumber\": \"0740741989\",     \r\n     \"PIN\": \"{{oneforyou_pin}}\"\r\n },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"eCentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "OneForYou Refund",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "c9594c80-bbc6-4008-a2e8-a42a4e1ccc3d"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);\r",
+                  "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)\r",
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "7a7e7fa0-26e1-4d05-bb66-beedbe9c6fed"
+              }
+            }
+          ],
+          "_postman_id": "c4f36aad-094b-46ee-b1c4-7b0e8a1f0965",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 3000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n     \"OriginalTransactId\":\"{{oneforyou_transact_id}}\"\r\n },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/refund"
+          },
+          "response": []
+        },
+        {
+          "name": "OneForYou Direct Refund",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "21539ccf-1148-4a0f-8bae-13108d9bcbeb"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "bfeae042-c5a4-4047-9a62-b2ceef601a8f"
+              }
+            }
+          ],
+          "_postman_id": "8ba976c1-dc19-440f-907b-852ea7273ff1",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "oauth2",
+              "oauth2": {
+                "client_authentication": "body",
+                "tokenType": "Bearer",
+                "grant_type": "client_credentials",
+                "useBrowser": true,
+                "redirect_uri": "integration@ecentric.com",
+                "addTokenTo": "header",
+                "clientSecret": "zrPGRzYrVrHAygQ2sLF9qZO2LfEa",
+                "clientId": "JEV0j56uI9y_NHIRbcP_mQn3eo8a",
+                "authUrl": "https://api.flashswitch.flash-group.com/token",
+                "accessTokenUrl": "https://api.flashswitch.flash-group.com/token",
+                "tokenName": "Bob"
+              }
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n        \"requestId\": \"9275733c-e954-4607-ab75-77a0c860af14\",\r\n        \"redemptionTransactionId\": \"732675708\",\r\n        \"amount\": ,\r\n        \"customerContact\": {\r\n            \"mechanism\": \"SMS\",\r\n            \"address\": \"0740741989\"\r\n        },\r\n        \"acquirer\": {\r\n            \"account\": {\r\n                \"accountNumber\": \"6104707878\"\r\n            }\r\n        },\r\n        \"entityTag\": \"9275733c-e954-4607-ab75-77a0c860af14\"\r\n    }",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "https://api.flashswitch.flash-group.com/1foryou/1.0.0/refundRedemption"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "2dba8eb6-9dad-4557-bc8f-426fbae3cd1d"
+    },
+    {
+      "name": "BlueLabelAirtime",
+      "item": [
+        {
+          "name": "Positive Pinless",
+          "item": [
+            {
+              "name": "BLT Bundle Topup Old API",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "6523894d-ccf6-4254-99f6-93dad161c5d9"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "971a31f2-5532-4f1c-8427-4dec9a245e93"
+                  }
+                }
+              ],
+              "_postman_id": "e24c363d-93f0-4ab7-a470-20e21b3ea786",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 2500,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"VodacomBundles\",\r\n        \"MobileNumber\": \"0820012345\",\r\n        \"Barcode\": \"6009711050131\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"MobileMart\",\r\n    \"merchantName\": \"CC Foods\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT Bundle Topup New API",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "33d6d76f-8639-4f2e-a7a0-dc947662b96a"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "d5343fb3-0171-4547-b650-7281cf6f40ed"
+                  }
+                }
+              ],
+              "_postman_id": "9f84871a-b7da-4a2e-88db-2333b401cabb",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 3000,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"MTNBundles\",\r\n        \"MobileNumber\": \"0830012345\",\r\n        \"Barcode\": \"6009711053804\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"MobileMart\",\r\n    \"merchantName\": \"CC Foods\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT AirtimeTP Old API",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "520ebfbe-b739-47ad-bf83-1cd411d44065"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "bd7d36fe-c250-4809-aea4-4aa9eedc6ad4"
+                  }
+                }
+              ],
+              "_postman_id": "8fa9c8eb-31e9-4865-951c-74779ee1e2be",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtimeTopup\",\r\n  \"transactAmount\": 3500,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711053361\",\r\n    \"MobileNetwork\": \"CellC\",\r\n    \"MobileNumber\" : \"0840000000\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT AirtimeTP New API",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "165187c9-4662-408c-815b-d8b8325fdea2"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "7396cf4d-040f-4309-aac2-53b30381f7b5"
+                  }
+                }
+              ],
+              "_postman_id": "13e5ef6c-f5c7-4772-aae6-506a21f3b32b",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DirectTopup\",\r\n  \"transactAmount\": 5000,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711053460\",\r\n    \"MobileNetwork\": \"TelkomMobile\",\r\n    \"MobileNumber\" : \"0850012345\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT Airtime Topup Reprint",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "250c5306-9425-44e7-9e2f-1edea6cb6b00"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = pm.response.json(); \r",
+                      "pm.test(\"Verify Json values\", function () { \r",
+                      "    pm.expect(jsonData.responseMessage).is.to.equal(\"Approved\"); \r",
+                      "});"
+                    ],
+                    "type": "text/javascript",
+                    "id": "aeb01515-9437-40e2-bda4-f81688eabf5a"
+                  }
+                }
+              ],
+              "_postman_id": "ba7fea52-5aec-433b-a146-1d96661e9fe9",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{blt_topup_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtimeTopup\",\r\n  \"transactAmount\": 3500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0828295643\",\r\n    \"MobileNetwork\": \"{{MobileNetwork}}\",\r\n    \"Barcode\": \"222223333344444\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/reprint"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "d046fe40-754e-4182-a4ea-84d8ccae2d8c",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Negative Pinless",
+          "item": [
+            {
+              "name": "Bundle Topup No MobileNetwork",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "61e71956-0615-48b1-a4f7-47ffc9c6ab02"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "a9c63450-ab7b-4511-9f72-34ff49d5f86a"
+                  }
+                }
+              ],
+              "_postman_id": "182e8847-eca6-49aa-ab81-5e619ef95011",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 2500,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNumber\": \"0820012345\",\r\n        \"Barcode\": \"6009711050131\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"MobileMart\",\r\n    \"merchantName\": \"CC Foods\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT Bundle Topup No MobileNumber",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "d4a0ab3e-2e3a-447e-a8be-bde3dda02fde"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "d985829e-0b27-488a-930c-f510e63f2545"
+                  }
+                }
+              ],
+              "_postman_id": "b45456ea-0876-4588-9d7f-b4b64c3d30e1",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 3000,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"MTNBundles\",\r\n        \"Barcode\": \"6009711053804\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"MobileMart\",\r\n    \"merchantName\": \"CC Foods\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT AirtimeTP No Barcode",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "f5d8f92c-7f60-4e3e-b458-6148a9b7290b"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "db243378-1018-42bb-a1e5-76bfab5ead33"
+                  }
+                }
+              ],
+              "_postman_id": "6eac4576-488e-48c9-b15f-e86faefb5e0b",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtimeTopup\",\r\n  \"transactAmount\": 3500,\r\n   \"productId\": {\r\n    \"MobileNetwork\": \"CellC\",\r\n    \"MobileNumber\" : \"0840000000\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "3245fad0-4250-4f8d-a84d-9d4561716e6b",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Positive Pinned",
+          "item": [
+            {
+              "name": "BLT Airtime Old API",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "f90b4812-187c-4840-993a-2b6db0b47f01"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "9a453e5b-c1ee-4c22-828f-1b31508040da"
+                  }
+                }
+              ],
+              "_postman_id": "67b6a313-69ad-45f2-8f21-18c0df6f0988",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtime\",\r\n  \"transactAmount\": 5500,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711051381\",\r\n    \"MobileNetwork\": \"Vodacom\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT Airtime New API",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "2387179a-43a0-4b5f-a0ac-6ea65d817531"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "80747dab-429a-4c93-9a90-87e049c5a139"
+                  }
+                }
+              ],
+              "_postman_id": "6aec7309-cf90-4bbf-9d68-a66d2237fec1",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"Airtime\",\r\n  \"transactAmount\": 5000,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711052135\",\r\n    \"MobileNetwork\": \"CellC\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT Airtime Reprint",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "b6e9de38-b220-4d3f-bcc4-5b3ceddfac07"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "a770a680-0c30-4b94-9156-d58e45862921"
+                  }
+                }
+              ],
+              "_postman_id": "b1fb50c2-abaf-439a-8497-7e8176000e01",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{blt_airtime_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtime\",\r\n  \"transactAmount\": 4900,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"Barcode\": \"6009711052418\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/reprint"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "3fd3e66d-5058-4e04-bc28-5b23ac6a5fb6",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Negative Pinned",
+          "item": [
+            {
+              "name": "BLT Airtime No Barcode",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "6799b96f-4083-41ec-b923-5a932cced8a5"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "b327d313-6cd8-4f20-8fd5-70d9e88218b6"
+                  }
+                }
+              ],
+              "_postman_id": "fd0fb3d1-b9a3-41f4-ac3b-148f1c210cc4",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtime\",\r\n  \"transactAmount\": 5500,\r\n   \"productId\": {\r\n    \"MobileNetwork\": \"Vodacom\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            },
+            {
+              "name": "BLT Airtime No Mobile Network",
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "id": "6c3beb50-d016-4cd5-93f3-7423a9260806"
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "var jsonData = JSON.parse(responseBody);\r",
+                      "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
+                    ],
+                    "type": "text/javascript",
+                    "id": "b93419ac-f873-4be8-85bb-6e3112c3fcbd"
+                  }
+                }
+              ],
+              "_postman_id": "cef9aa10-c497-4b0b-ba38-c539de75b383",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"Airtime\",\r\n  \"transactAmount\": 5000,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711052135\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+                  "options": {
+                    "raw": {}
+                  }
+                },
+                "url": "{{baseUrl}}/merchandise/purchase"
+              },
+              "response": []
+            }
+          ],
+          "_postman_id": "b46f2303-d809-4a65-9a42-afa1b0d87a9f",
+          "_postman_isSubFolder": true
+        }
+      ],
+      "_postman_id": "a4f04a72-57c4-457b-9d24-c8b590c19f63"
+    },
+    {
+      "name": "BlueLabelElectricity",
+      "item": [
+        {
+          "name": "BLT Electricity Enquiry",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "4a387e09-b68b-4078-a3c5-7079778eaffb"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "44ca1b29-4c69-4833-a3bf-cf286deeffa0"
+              }
+            }
+          ],
+          "_postman_id": "3313dc63-829a-413b-a244-5971ce63c580",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 1000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "3f966361-c743-49cc-8640-f4599f01ad1a"
+              }
+            }
+          ],
+          "_postman_id": "eb33f7bf-0025-4d8e-b0d0-eb9f74188afb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 1000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"00000100001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "912d724a-075e-4665-8fab-6459c9f46bc5"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "8dd9e329-618e-4153-889c-059ade616c3c"
+              }
+            }
+          ],
+          "_postman_id": "633c5f95-7b0f-432c-904b-6553769029e7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 1000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T1",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "4d22e815-939e-46b9-bd35-1ff34f0fa992"
+              }
+            }
+          ],
+          "_postman_id": "f3d53aad-0c99-41c8-9956-b507bb0860e9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 1000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"00000100001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "e020fe1e-23fe-4c6b-a1ae-a16f9974aefc"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "a977871a-912f-40a8-b418-10d3f5b83f0c"
+              }
+            }
+          ],
+          "_postman_id": "230529cc-ceb2-47eb-88be-1ff5fb0fc355",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T2",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "983faae8-6ef4-4299-bfc6-15f1d64ec83a"
+              }
+            }
+          ],
+          "_postman_id": "8de815bf-b017-4ec4-8f1f-af449bd59730",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"00000100001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T3",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "8c970a65-5a34-459c-8b05-fa0cb100946d"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "3936fc47-e8a3-44d9-ab59-66a486de5e56"
+              }
+            }
+          ],
+          "_postman_id": "999f25ab-82da-42c2-b46b-4b237f638c48",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001001001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T3",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "b127e917-4e70-462a-acc0-2676a870eb93"
+              }
+            }
+          ],
+          "_postman_id": "b5de889f-bb4a-4a23-a63f-e66343f8292e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001001001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T4",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "6acfc409-c6fe-4007-b8e1-6c354016980c"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "0968e76c-3301-41cc-867f-18e7933765a5"
+              }
+            }
+          ],
+          "_postman_id": "e1b72e46-4aa0-4114-bb26-a5dcfe064067",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001002001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T4",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "f9e471ba-2433-4626-9eeb-cf1e0da2e7af"
+              }
+            }
+          ],
+          "_postman_id": "1e5bda3b-1736-42f0-8a2f-42142c7d2254",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001002001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T5",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "1d8780a4-6721-4f44-8375-644e7d1d35b5"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "45d436da-5361-458d-b188-bee9aeb8e9f5"
+              }
+            }
+          ],
+          "_postman_id": "45b46477-8f66-47c0-919c-204ccd4f97ea",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 2000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001001001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T5",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "c08763b8-7375-4ba5-bbe2-87392d16191e"
+              }
+            }
+          ],
+          "_postman_id": "6249db43-3092-4198-9884-c9f5502dd710",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 2000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001001001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T6",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "d6a25833-7e18-4d88-9a27-5a21111c4a39"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "3395ff00-55cf-4b43-829c-53531cfcda63"
+              }
+            }
+          ],
+          "_postman_id": "5599c2cc-1a03-4db3-9103-7da4640c600b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"001001000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T6",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "fc956c3b-acf8-453c-b131-94f1c08e6ebd"
+              }
+            }
+          ],
+          "_postman_id": "dfaa54bf-8e3a-4451-b6dc-d8e641425af7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"001001000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T7",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "e9c4a338-909e-4ace-aa02-0e584beb50a9"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "65056e3f-7f85-494b-888e-03395997adfe"
+              }
+            }
+          ],
+          "_postman_id": "293c9d68-ca34-4e17-af67-f2aef4efb2cc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 00,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000010000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T7",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "f13e3562-e21c-4fef-a3a0-63bd12622a25"
+              }
+            }
+          ],
+          "_postman_id": "38fdd9cd-bb12-411d-ae7e-836e6f65c72e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 00,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000010000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T8",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "1ee1749a-538e-414d-8ceb-5a011ee4e7ad"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "e093d8dc-cb05-43a1-82ee-08d0b1b298b6"
+              }
+            }
+          ],
+          "_postman_id": "0c4b05a4-1ba4-4c69-94f6-f4b0c3efe9e8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000003\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T8",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "e60f6a61-810c-4bf7-bae8-41cea6f146b1"
+              }
+            }
+          ],
+          "_postman_id": "1b6afafa-fd11-4ad0-ae08-e33f3a72f46a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000003\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T9",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "0cb73f33-8681-4d8b-b58c-f0a0caf03d9d"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "09199e30-2d3e-4754-8e8e-3e658ae97faa"
+              }
+            }
+          ],
+          "_postman_id": "f35a44af-421d-4096-92d2-bfa2e2bf41c4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001001003\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T9",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "747979e4-f7e9-45af-be8c-8223a6b55f73"
+              }
+            }
+          ],
+          "_postman_id": "4ac7b23b-7671-4238-bd42-520641d43191",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001001003\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T10",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "0ae4cafe-b56c-4d24-99e3-f3ebe2dfa534"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "ab5068ca-07fe-4b07-b2d9-e771d6453cea"
+              }
+            }
+          ],
+          "_postman_id": "204b8208-2437-45e5-b0f5-2fac28da81b6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 00,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000003\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null,\r\n  \"BSSTTokens\": \"50.0\"\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T10",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "c3ab77b5-5db6-4863-8414-1b4bb876f1d9"
+              }
+            }
+          ],
+          "_postman_id": "dda92b46-71ad-4285-ad9e-a84ae47caac0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 00,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000003\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null,\r\n  \"BSSTTokens\": \"50.0\"\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T11",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "7dfd49cf-f814-446f-88ab-234e410a8cb5"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "64c75f1a-d9c0-4cb1-b029-5cb8245875eb"
+              }
+            }
+          ],
+          "_postman_id": "5ed43320-dbc2-4345-91a1-da2e91d4a63d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 00,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000008\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Enquiry T12",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "9f1719e3-c09f-4189-84fd-e96e509466ea"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "20d87644-0b9a-478d-8e46-673ee4a07106"
+              }
+            }
+          ],
+          "_postman_id": "c5973c9c-7520-40d2-80be-1c3ba9de2682",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 00,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000008\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null,\r\n  \"FBEUNITS\": \"50.0\"\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Electricity Confirmation T12",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "fc91ee75-3db5-42c6-9b6d-99a353008733"
+              }
+            }
+          ],
+          "_postman_id": "1382073e-a8bc-458d-bcfe-ef1c554d06bd",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000008\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null,\r\n  \"FBEUNITS\": \"50.0\"\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "9279bd64-80cc-4b25-86aa-21605c40c6c9"
+    },
+    {
+      "name": "OntecElectricity",
+      "item": [
+        {
+          "name": "OTC Electricity Enquiry",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "c6b963e4-026d-4023-a944-f292c337b7f3"
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "2d6db1b0-fc3d-4573-980f-aa09c69210cc"
+              }
+            }
+          ],
+          "_postman_id": "3c40c410-2247-43bb-ac09-91996fb6064e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"merchandiseType\": \"Electricity\",\r\n  \"transactAmount\": 0,\r\n  \"productId\": {\r\n    \"MeterNumber\": \"90910020033\"\r\n  },\r\n  \"messageMode\": \"Single\",\r\n  \"tenderData\": null,\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"80000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"00300\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/enquiry"
+          },
+          "response": []
+        },
+        {
+          "name": "OTC Electricity Purchase",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "00b976b7-17ba-4a95-a1b8-cd62a978e253"
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"otc_electricity_purchase_guid\", jsonData.transactGuid)",
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "3507b166-95c6-438a-9861-dd9171733fb8"
+              }
+            }
+          ],
+          "_postman_id": "c1e9874b-0689-46bf-b7c7-8ebcf2a9334a",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"merchandiseType\": \"Electricity\",\r\n  \"transactAmount\": 3500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"90910020033\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"00001\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null,\r\n  \"FBEUNITS\": \"50.0\"\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase"
+          },
+          "response": []
+        },
+        {
+          "name": "OTC Electricity Reprint By Ref",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "84751a89-55cb-4e10-89ac-b56991b0516a"
+              }
+            }
+          ],
+          "_postman_id": "7b4468b3-4534-4c26-b37d-a4322fdda39e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{otc_electricity_purchase_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"merchandiseType\": \"OntecElectricity\",\r\n  \"transactAmount\": 0,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"00001\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/reprint"
+          },
+          "response": []
+        },
+        {
+          "name": "OTC Electricity Reprint By Meter",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "id": "4e46f5a3-8730-45be-8ee9-b219a7a7a8c2"
+              }
+            }
+          ],
+          "_postman_id": "fdfde42d-7978-49ee-9950-d36d900a1166",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"merchandiseType\": \"OntecElectricity\",\r\n  \"transactAmount\": 0,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"90910020033\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"00300\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/reprint"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "923683ea-6db1-496b-a585-a7e122d05689"
+    },
+    {
+      "name": "BLT BillPay",
+      "item": [
+        {
+          "name": "BLT Billpay Enquiry Old API",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"HTTP Status Code\", function() {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Response Message\", function() {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.responseMessage).to.eql(\"Approved\");",
+                  "});",
+                  "",
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"billpayment_transactGuid_approved_confirmation\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "11a79162-6c50-47a6-adc1-42cb153a7f33"
+              }
+            }
+          ],
+          "_postman_id": "b6ac0eee-476f-43ce-8c4c-a93c5faadd23",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelBillPay\",\r\n  \"transactAmount\": 20000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase",
+            "description": "Lookup of acocunt on Bluelabel"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT  Billpay Confirmation Old API",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"HTTP Status Code\", function() {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Response Message\", function() {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.responseMessage).to.eql(\"Approved\");",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "id": "95f2f298-8b5b-4e41-b91e-6eac41dbc533"
+              }
+            }
+          ],
+          "_postman_id": "55fc5a4d-1b8e-49f5-9ebd-4cee2a4cb700",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{billpayment_transactGuid_approved_confirmation}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelBillPay\",\r\n  \"transactAmount\": 200000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase",
+            "description": "Confirmation on Bluelabel"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT Billpay Enquiry New API",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"HTTP Status Code\", function() {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Response Message\", function() {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.responseMessage).to.eql(\"Approved\");",
+                  "});",
+                  "",
+                  "var jsonData = JSON.parse(responseBody);",
+                  "postman.setEnvironmentVariable(\"billpayment_transactGuid_approved_confirmation\", jsonData.transactGuid)"
+                ],
+                "type": "text/javascript",
+                "id": "7e984c9f-a0bc-481c-b0d7-fbf88269c876"
+              }
+            }
+          ],
+          "_postman_id": "05dbc9ec-dedf-41cd-8c85-1cc687328f24",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DSTV\",\r\n  \"transactAmount\": 20000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase",
+            "description": "Lookup of acocunt on Bluelabel"
+          },
+          "response": []
+        },
+        {
+          "name": "BLT  Billpay Confirmation Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"HTTP Status Code\", function() {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Response Message\", function() {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData.responseMessage).to.eql(\"Approved\");",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "id": "02ca7b5e-bdb3-4045-9caf-319e8ef61cf3"
+              }
+            }
+          ],
+          "_postman_id": "642ceb98-f3d3-44ab-86ab-a9d1fc822945",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"transactGuid\": \"{{billpayment_transactGuid_approved_confirmation}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DSTV\",\r\n  \"transactAmount\": 200000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+              "options": {
+                "raw": {}
+              }
+            },
+            "url": "{{baseUrl}}/merchandise/purchase",
+            "description": "Confirmation on Bluelabel"
+          },
+          "response": []
+        }
+      ],
+      "_postman_id": "efc6cbf1-e952-4150-911e-3a09fc7403e5"
+    },
+    {
+      "name": "BLT Electricity Enquiry (Invalid Meter Number)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "id": "25ede770-b7da-427a-98bc-d502d42ecaf5"
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "id": "cbf6f4e2-0b21-48cb-a56c-b5896c13daf7"
+          }
+        }
+      ],
+      "_postman_id": "bb46c107-7950-435a-8226-adc3345dee76",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"5634-767435\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"SolarD\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "{{baseUrl}}/merchandise/purchase"
+      },
+      "response": []
+    },
+    {
+      "name": "BLT Electricity Reprint by Ref",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "id": "8f36c4c0-ac54-41c8-82dd-65e2204aab2c"
+          }
+        }
+      ],
+      "_postman_id": "c3aa8244-35d0-4484-b73f-195ea3e7a68c",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 0,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"SolarD\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "{{baseUrl}}/merchandise/reprint"
+      },
+      "response": []
+    },
+    {
+      "name": "BLT Electricity Reprint By Meter",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "id": "fadfcd39-c7a5-4f08-897b-231367891140"
+          }
+        }
+      ],
+      "_postman_id": "c790a04a-fd7e-47af-ba8f-b4e485cff413",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 0,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"{{electricityMeterNumber}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"SolarD\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "{{baseUrl}}/merchandise/reprint"
+      },
+      "response": []
+    },
+    {
+      "name": "BLT Airtime Topup",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "id": "4aeff35b-77e1-4efd-a94e-e2f88f42d89a"
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);\r",
+              "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
+            ],
+            "type": "text/javascript",
+            "id": "e1d7cd95-c4cb-4676-bbb9-914d4816c876"
+          }
+        }
+      ],
+      "_postman_id": "25c30708-bd9f-4720-bcd3-b6262a9ccb23",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "type": "text",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DirectTopup\",\r\n  \"transactAmount\": 500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0820012345\",\r\n    \"MobileNetwork\": \"VirginMobile\",\r\n    \"Barcode\": \"6009711053255\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}",
+          "options": {
+            "raw": {}
+          }
+        },
+        "url": "{{baseUrl}}/merchandise/purchase"
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "basic",
+    "basic": {
+      "password": "a",
+      "username": "a"
+    }
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "pm.environment.set(\"merchantName\", \"Test2\");",
+          "pm.environment.set(\"MobileNumber\", \"0832956223\");",
+          "pm.environment.set(\"MobileNetwork\", \"MTN\");",
+          "",
+          "",
+          "",
+          "function _p8(s) {",
+          "       var p = (Math.random().toString(16)+\"000000000\").substr(2,8);",
+          "       return s ? \"-\" + p.substr(0,4) + \"-\" + p.substr(4,4) : p ;",
+          "   }",
+          "",
+          "function uuid() {",
+          "   ",
+          "   return _p8() + _p8(true) + _p8(true) + _p8();",
+          "}",
+          "",
+          "function dateTimeConverter() {",
+          "    var dateTime = (new Date()).toISOString();",
+          "    dateTime = dateTime.replace(\"-\", \"\");",
+          "    dateTime = dateTime.replace(\"-\", \"\");",
+          "    dateTime = dateTime.replace(\":\", \"\");",
+          "    dateTime = dateTime.replace(\":\", \"\");",
+          "    //var date = d2.substring(4,8);",
+          "    return dateTime;",
+          "}",
+          "",
+          "function dateTime() {",
+          "    var datetime = dateTimeConverter();",
+          "    datetime = datetime.substring(0,15);",
+          "    datetime = datetime.replace(\"T\", \"\");",
+          "    return datetime;",
+          "}",
+          "",
+          "function localDate() {",
+          "    var date = dateTimeConverter();",
+          "    date = date.substring(4,8);",
+          "    return date;",
+          "}",
+          "",
+          "function localTime() {",
+          "    var time = dateTimeConverter();",
+          "    time = time.substring(9,15);",
+          "    return time;",
+          "}",
+          "",
+          "var transactGuid = uuid();",
+          "var dateTime =  (new Date()).toISOString();",
+          "",
+          "pm.environment.set(\"transactGuid\", transactGuid);",
+          "pm.environment.set(\"messageDateTime\", dateTime);",
+          "pm.environment.set(\"transactDateTime\", dateTime);",
+          ""
+        ],
+        "id": "b15082e0-f023-4779-97b8-ff86023697c8"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "pm.test(\"Response Content-Type\", function () {",
+          "    pm.response.to.have.header(\"Content-Type\");",
+          "    pm.expect(pm.response.headers.get(\"Content-Type\")).to.be.oneOf([\"application/json; charset=utf-8\", \"application/problem+json; charset=utf-8\"]);",
+          "});",
+          "",
+          "pm.test(\"Response Time\", function() {",
+          "    pm.expect(pm.response.responseTime).to.be.below(20000);",
+          "});"
+        ],
+        "id": "6e72b1cc-92a7-4c02-bbe2-a3c6917487dd"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "cc28ceaf-59a0-4028-88fe-66418b1c09f3",
+      "key": "oneforyou_pin",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "8d9a62ed-69aa-4f4e-91e8-06d8e70d534f",
+      "key": "oneforyou_transact_guid",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "id": "5770b647-ab55-4d35-97ba-5122d3fe6e6f",
+      "key": "oneforyou_transact_id",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
