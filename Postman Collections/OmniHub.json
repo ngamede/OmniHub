@@ -1467,22 +1467,22 @@
                 {
                   "listen": "prerequest",
                   "script": {
+                    "id": "165187c9-4662-408c-815b-d8b8325fdea2",
                     "exec": [
                       ""
                     ],
-                    "type": "text/javascript",
-                    "id": "165187c9-4662-408c-815b-d8b8325fdea2"
+                    "type": "text/javascript"
                   }
                 },
                 {
                   "listen": "test",
                   "script": {
+                    "id": "7396cf4d-040f-4309-aac2-53b30381f7b5",
                     "exec": [
                       "var jsonData = JSON.parse(responseBody);\r",
                       "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
                     ],
-                    "type": "text/javascript",
-                    "id": "7396cf4d-040f-4309-aac2-53b30381f7b5"
+                    "type": "text/javascript"
                   }
                 }
               ],
@@ -1501,7 +1501,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DirectTopup\",\r\n  \"transactAmount\": 5000,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711053460\",\r\n    \"MobileNetwork\": \"TelkomMobile\",\r\n    \"MobileNumber\" : \"0850012345\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DirectTopup\",\r\n  \"transactAmount\": 5000,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711053460\",\r\n    \"MobileNetwork\": \"TelkomMobile\",\r\n    \"MobileNumber\" : \"0850012345\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/purchase"
               },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "934928c9-9f2d-476f-a8a9-6a18f49ffccf",
+      "id": "86fd27fe-6102-4911-a51a-cb4dcb260ece",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "b69e3532-cb17-48a1-9bd9-90802b99c563",
+      "id": "5ae69906-f33f-4a2a-afaf-4c672f5bf0ed",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "0de63bde-399a-4af7-a5b3-2d5e450e5b00",
+      "id": "e368411b-83a2-41bf-98de-80a390df3955",
       "key": "oneforyou_transact_id",
       "value": ""
     }
