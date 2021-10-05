@@ -3147,6 +3147,7 @@
             {
               "listen": "test",
               "script": {
+                "id": "11a79162-6c50-47a6-adc1-42cb153a7f33",
                 "exec": [
                   "pm.test(\"HTTP Status Code\", function() {",
                   "    pm.response.to.have.status(200);",
@@ -3160,8 +3161,7 @@
                   "var jsonData = JSON.parse(responseBody);",
                   "postman.setEnvironmentVariable(\"billpayment_transactGuid_approved_confirmation\", jsonData.transactGuid)"
                 ],
-                "type": "text/javascript",
-                "id": "11a79162-6c50-47a6-adc1-42cb153a7f33"
+                "type": "text/javascript"
               }
             }
           ],
@@ -3180,7 +3180,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelBillPay\",\r\n  \"transactAmount\": 20000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelBillPay\",\r\n  \"transactAmount\": 20000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase",
             "description": "Lookup of acocunt on Bluelabel"
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "0b8c766e-74ae-4a00-b00d-ebf526aee0b2",
+      "id": "7b6241ea-b56b-45ae-b69a-ddc1a4808b83",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "15e6b47c-c722-44a8-9934-88e2773d7682",
+      "id": "26adeafa-5968-421a-99d4-0c58089b97c2",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "473bdd47-4e1e-4dbd-8244-15d5c8018f26",
+      "id": "aa17dc1a-6391-435d-a01a-1e8289d5ff43",
       "key": "oneforyou_transact_id",
       "value": ""
     }
