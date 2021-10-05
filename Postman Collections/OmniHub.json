@@ -3361,7 +3361,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 7000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"5634-767435\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
+          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 3000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"5634-767435\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
         },
         "url": "{{baseUrl}}/merchandise/purchase"
       },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "86d5fdf8-5212-4dd0-b067-2f44eb608332",
+      "id": "457958b5-dd6a-41bb-baea-86db6fae8740",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "fdae4218-c98c-4392-bfa9-b9b0805d5a1e",
+      "id": "82cb4672-ea1e-49ce-8c4d-60ecae785f40",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "4342ebf7-852e-4411-b5dd-7f1b0ef7225b",
+      "id": "0c0731af-2b05-4000-beb4-dd8fbfd475e6",
       "key": "oneforyou_transact_id",
       "value": ""
     }
