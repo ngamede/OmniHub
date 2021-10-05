@@ -1955,22 +1955,22 @@
             {
               "listen": "test",
               "script": {
+                "id": "4a387e09-b68b-4078-a3c5-7079778eaffb",
                 "exec": [
                   "var jsonData = JSON.parse(responseBody);",
                   "postman.setEnvironmentVariable(\"blt_electricity_transact_guid\", jsonData.transactGuid)"
                 ],
-                "type": "text/javascript",
-                "id": "4a387e09-b68b-4078-a3c5-7079778eaffb"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "prerequest",
               "script": {
+                "id": "44ca1b29-4c69-4833-a3bf-cf286deeffa0",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "44ca1b29-4c69-4833-a3bf-cf286deeffa0"
+                "type": "text/javascript"
               }
             }
           ],
@@ -1989,7 +1989,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 1000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 1000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"000001000001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "ee920dc4-e9c7-4754-ac39-3793e5c410c2",
+      "id": "7fa658dc-0673-4cf7-bf9e-e8a64cdccd99",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "809b4a5e-0bc8-4230-82f8-44084e59ae76",
+      "id": "758df4a0-3f81-4040-86c6-0b01736cdbef",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "1899e331-7452-47f3-a7b0-3d883bc3ab90",
+      "id": "a3eb8c1f-cf29-4915-b1f7-5dedbce5b240",
       "key": "oneforyou_transact_id",
       "value": ""
     }
