@@ -453,7 +453,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{ep_payment_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"tenderData\": \r\n     {\r\n      \"type\": \"CreditCard\",\r\n      \"amount\": 15000,\r\n      \"maskedPAN\": \"52212900000001945\",\r\n      \"reference\": \"1234567\"\r\n    }  ,  \r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"9413542610672257\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n "
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_payment_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"tenderData\": \r\n     {\r\n      \"type\": \"CreditCard\",\r\n      \"amount\": 15000,\r\n      \"maskedPAN\": \"52212900000001945\",\r\n      \"reference\": \"1234567\"\r\n    }  ,  \r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"9413542610672257\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n "
             },
             "url": "{{baseUrl}}/merchandise/purchase"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "172fb845-f6ca-43c7-8bd6-2fcaf573e2dc",
+      "id": "7f60f85c-7bb6-4e3b-ac6c-19f8e8faaaf0",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "6d70f041-a295-4d91-bb04-20ae2147a080",
+      "id": "7180fa86-3185-4988-ae26-1a797384242f",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "1f410541-b896-452d-b593-a64b4c198cf4",
+      "id": "d779373b-240b-4c18-9489-89135d724b4e",
       "key": "oneforyou_transact_id",
       "value": ""
     }
