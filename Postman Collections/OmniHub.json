@@ -1119,24 +1119,24 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "51517034-1c7a-453e-8258-64f12d887b64",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "51517034-1c7a-453e-8258-64f12d887b64"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "1067b216-8194-4b46-a69a-fbc180943793",
                 "exec": [
                   "var jsonData = JSON.parse(responseBody);\r",
                   "postman.setEnvironmentVariable(\"oneforyou_transact_guid\", jsonData.transactGuid)\r",
                   "postman.setEnvironmentVariable(\"oneforyou_transact_id\", jsonData.additionalData.ResponseData.TransactId)\r",
                   "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)"
                 ],
-                "type": "text/javascript",
-                "id": "1067b216-8194-4b46-a69a-fbc180943793"
+                "type": "text/javascript"
               }
             }
           ],
@@ -1155,7 +1155,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 1100,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n     \"PIN\": \"1234067110100642\"\r\n },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 1100,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n     \"PIN\": \"1234067110100642\"\r\n },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "bb8a0a05-c545-4e13-8f1a-b9f70133850c",
+      "id": "192e342c-01d4-4158-929c-d796ae19c000",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "218c32ed-a911-4fa2-82a8-73f12dbae5ae",
+      "id": "33b03583-82e6-49ef-974b-5c45722e0b14",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "a3e73430-de0a-4009-b8f5-96c84f8763a6",
+      "id": "027cbc73-43e9-41e5-9179-c47448e2f0ad",
       "key": "oneforyou_transact_id",
       "value": ""
     }
