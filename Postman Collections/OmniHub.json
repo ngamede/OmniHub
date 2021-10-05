@@ -3193,6 +3193,7 @@
             {
               "listen": "test",
               "script": {
+                "id": "95f2f298-8b5b-4e41-b91e-6eac41dbc533",
                 "exec": [
                   "pm.test(\"HTTP Status Code\", function() {",
                   "    pm.response.to.have.status(200);",
@@ -3203,8 +3204,7 @@
                   "    pm.expect(jsonData.responseMessage).to.eql(\"Approved\");",
                   "});"
                 ],
-                "type": "text/javascript",
-                "id": "95f2f298-8b5b-4e41-b91e-6eac41dbc533"
+                "type": "text/javascript"
               }
             }
           ],
@@ -3223,7 +3223,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{billpayment_transactGuid_approved_confirmation}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelBillPay\",\r\n  \"transactAmount\": 200000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n    \"transactGuid\": \"{{billpayment_transactGuid_approved_confirmation}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Dual\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBillPay\",\r\n    \"transactAmount\": 200000,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"AccountNumber\": \"106987583\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"{{aggregatorName}}\",\r\n    \"merchantName\": \"{{chainName}}\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase",
             "description": "Confirmation on Bluelabel"
@@ -3236,6 +3236,7 @@
             {
               "listen": "test",
               "script": {
+                "id": "7e984c9f-a0bc-481c-b0d7-fbf88269c876",
                 "exec": [
                   "pm.test(\"HTTP Status Code\", function() {",
                   "    pm.response.to.have.status(200);",
@@ -3249,8 +3250,7 @@
                   "var jsonData = JSON.parse(responseBody);",
                   "postman.setEnvironmentVariable(\"billpayment_transactGuid_approved_confirmation\", jsonData.transactGuid)"
                 ],
-                "type": "text/javascript",
-                "id": "7e984c9f-a0bc-481c-b0d7-fbf88269c876"
+                "type": "text/javascript"
               }
             }
           ],
@@ -3269,7 +3269,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DSTV\",\r\n  \"transactAmount\": 20000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AdminRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DSTV\",\r\n  \"transactAmount\": 20000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase",
             "description": "Lookup of acocunt on Bluelabel"
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "7b6241ea-b56b-45ae-b69a-ddc1a4808b83",
+      "id": "f8296739-1eb4-475e-a6fe-8612df7e0e19",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "26adeafa-5968-421a-99d4-0c58089b97c2",
+      "id": "343ad4c0-4a9f-4dcf-a3e7-1dc4c0869fc6",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "aa17dc1a-6391-435d-a01a-1e8289d5ff43",
+      "id": "db9d263b-8eea-4c6f-851b-f57565455ad6",
       "key": "oneforyou_transact_id",
       "value": ""
     }
