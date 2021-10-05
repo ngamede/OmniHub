@@ -692,21 +692,21 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "c8fa4cf0-b5b1-4b21-a952-25b68d105cca",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "c8fa4cf0-b5b1-4b21-a952-25b68d105cca"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "9dbdae45-2f10-4981-9de7-f227645dbaf1",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "9dbdae45-2f10-4981-9de7-f227645dbaf1"
+                "type": "text/javascript"
               }
             }
           ],
@@ -725,7 +725,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{ep_payment_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"tenderData\": \r\n     {\r\n      \"type\": \"CreditCard\",\r\n      \"amount\": 15000,\r\n      \"maskedPAN\": \"52212900000001945\",\r\n      \"reference\": \"1234567\"\r\n    }  ,  \r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"9413542610672257\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n "
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_payment_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"tenderData\": \r\n     {\r\n      \"type\": \"CreditCard\",\r\n      \"amount\": 15000,\r\n      \"maskedPAN\": \"52212900000001945\",\r\n      \"reference\": \"1234567\"\r\n    }  ,  \r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"EasyPayNumber\",\r\n    \"BillPaymentIdValue\": \"9413542610672257\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n "
             },
             "url": "{{baseUrl}}/merchandise/purchase"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "f3ee59b0-7518-455f-babb-56114388a27d",
+      "id": "39c7aaad-e984-4d77-bc37-59ce494a211f",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "328e2cf6-af71-432c-a716-ded5ce7271cc",
+      "id": "012e54e6-c95f-40f4-8f0f-97d2a1179c7f",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "929c4100-2b25-4b46-8e13-484bcf242a19",
+      "id": "b751a77c-e858-4282-bf96-865dc1049d98",
       "key": "oneforyou_transact_id",
       "value": ""
     }
