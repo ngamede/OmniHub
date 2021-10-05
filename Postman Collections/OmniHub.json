@@ -828,22 +828,22 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "63b44e0c-d13a-461c-b835-eb8269b7276a",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "63b44e0c-d13a-461c-b835-eb8269b7276a"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "bc3d93cb-354c-4be0-9f00-c56d169816f1",
                 "exec": [
                   "var jsonData = JSON.parse(responseBody);\r",
                   "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
                 ],
-                "type": "text/javascript",
-                "id": "bc3d93cb-354c-4be0-9f00-c56d169816f1"
+                "type": "text/javascript"
               }
             }
           ],
@@ -862,7 +862,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceSubscription\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"6606068950086\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceSubscription\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"6606068950086\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "0346c722-77f0-44dc-a445-839ce1cdedc9",
+      "id": "362b30fd-26cf-4f4c-ba9a-c0f839c2f0fc",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "8f85d711-29b8-4dde-a0fc-14df47e34a76",
+      "id": "4d16d659-ae40-42b1-8332-29942c95fe37",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "500bcbd2-d5e1-4f25-a9a4-e7a1207d24cd",
+      "id": "909138f2-7cf4-44d3-a10d-6e32f1a4f7de",
       "key": "oneforyou_transact_id",
       "value": ""
     }
