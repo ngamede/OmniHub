@@ -737,22 +737,22 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "be8c0d0b-3258-47b8-8362-fd11dab7d08b",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "be8c0d0b-3258-47b8-8362-fd11dab7d08b"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "4b44049f-b750-4acc-84b6-35c2a129f5c4",
                 "exec": [
                   "var jsonData = JSON.parse(responseBody);\r",
                   "postman.setEnvironmentVariable(\"ep_payment_transact_guid\", jsonData.transactGuid)"
                 ],
-                "type": "text/javascript",
-                "id": "4b44049f-b750-4acc-84b6-35c2a129f5c4"
+                "type": "text/javascript"
               }
             }
           ],
@@ -771,7 +771,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceBoxOffice\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"8910305313084\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceBoxOffice\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"8910305313084\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "39c7aaad-e984-4d77-bc37-59ce494a211f",
+      "id": "b0af212a-5301-4c60-ad05-f83264fab1b2",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "012e54e6-c95f-40f4-8f0f-97d2a1179c7f",
+      "id": "2e3c9300-af33-4ea9-9d36-77caf157b31b",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "b751a77c-e858-4282-bf96-865dc1049d98",
+      "id": "5ab1bf73-2a85-463d-867b-882ac728e36d",
       "key": "oneforyou_transact_id",
       "value": ""
     }
