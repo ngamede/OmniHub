@@ -3477,7 +3477,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DirectTopup\",\r\n  \"transactAmount\": 500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0820012345\",\r\n    \"MobileNetwork\": \"VirginMobile\",\r\n    \"Barcode\": \"6009711053255\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CCFoods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+          "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DirectTopup\",\r\n  \"transactAmount\": 500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0820012345\",\r\n    \"MobileNetwork\": \"VirginMobile\",\r\n    \"Barcode\": \"6009711053255\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
         },
         "url": "{{baseUrl}}/merchandise/purchase"
       },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "9c573984-9033-4776-b811-485271353433",
+      "id": "f921484b-4a34-40ca-bda0-4402d8309274",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "c3e27c67-78aa-4975-baad-4f22e2eb7e5c",
+      "id": "37e56422-7ef8-44b3-99f9-e586e87bc101",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "a8232f3f-61b4-4a9a-baf6-5277ac54e519",
+      "id": "6dadf9df-28cd-4eec-9133-8f158c54c860",
       "key": "oneforyou_transact_id",
       "value": ""
     }
