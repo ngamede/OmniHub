@@ -1900,22 +1900,22 @@
                 {
                   "listen": "prerequest",
                   "script": {
+                    "id": "6c3beb50-d016-4cd5-93f3-7423a9260806",
                     "exec": [
                       ""
                     ],
-                    "type": "text/javascript",
-                    "id": "6c3beb50-d016-4cd5-93f3-7423a9260806"
+                    "type": "text/javascript"
                   }
                 },
                 {
                   "listen": "test",
                   "script": {
+                    "id": "b93419ac-f873-4be8-85bb-6e3112c3fcbd",
                     "exec": [
                       "var jsonData = JSON.parse(responseBody);\r",
                       "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
                     ],
-                    "type": "text/javascript",
-                    "id": "b93419ac-f873-4be8-85bb-6e3112c3fcbd"
+                    "type": "text/javascript"
                   }
                 }
               ],
@@ -1934,7 +1934,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"Airtime\",\r\n  \"transactAmount\": 5000,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711052135\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"Airtime\",\r\n  \"transactAmount\": 5000,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711052135\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/purchase"
               },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "3dd0b7ee-2c34-4974-a94c-06ef3ca38f05",
+      "id": "ee920dc4-e9c7-4754-ac39-3793e5c410c2",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "b7adb935-84d7-4cf1-b2f1-acfb91d7c286",
+      "id": "809b4a5e-0bc8-4230-82f8-44084e59ae76",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "06fd663e-1c50-4a27-8a75-3d5635d46e87",
+      "id": "1899e331-7452-47f3-a7b0-3d883bc3ab90",
       "key": "oneforyou_transact_id",
       "value": ""
     }
