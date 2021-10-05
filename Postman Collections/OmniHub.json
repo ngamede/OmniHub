@@ -104,21 +104,21 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "e00166dc-40f3-4dce-952f-fef41266ef6b",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "e00166dc-40f3-4dce-952f-fef41266ef6b"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "5b427af5-dbe5-4d49-9103-736589d292cd",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "5b427af5-dbe5-4d49-9103-736589d292cd"
+                "type": "text/javascript"
               }
             }
           ],
@@ -137,7 +137,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceBoxOffice\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"8910305313084\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"MultiChoiceBoxOffice\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"SaId\",\r\n    \"BillPaymentIdValue\": \"8910305313084\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/enquiry"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "daae65cb-c73c-4aa4-a95c-dbeefc6dc055",
+      "id": "5f7fd50a-e31f-485a-9d5d-5437a7eafe6a",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "0a2d1800-c414-49ac-b848-a9ab242d2520",
+      "id": "7490074d-7809-4701-a616-58b771097d68",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "8cdeee0c-1c49-46c9-88a4-e38e2d735389",
+      "id": "e6f6e23d-2a05-428f-b10b-eb3309a66f29",
       "key": "oneforyou_transact_id",
       "value": ""
     }
