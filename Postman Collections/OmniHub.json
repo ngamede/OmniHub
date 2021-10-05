@@ -880,23 +880,23 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "fd8747e7-93b8-4ae2-aa64-c2b87f246870",
                 "exec": [
                   "//pm.collectionVariables.set(\"oneforyou_pin\", \"PIN\");"
                 ],
-                "type": "text/javascript",
-                "id": "fd8747e7-93b8-4ae2-aa64-c2b87f246870"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "874968f6-7b16-4b3d-b33e-91ba7dcaee52",
                 "exec": [
                   "var jsonData = JSON.parse(responseBody);\r",
                   "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)\r",
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "874968f6-7b16-4b3d-b33e-91ba7dcaee52"
+                "type": "text/javascript"
               }
             }
           ],
@@ -915,7 +915,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 30000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 2000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/deposit"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "d4a1cb1d-072f-435b-8d93-2ab50cedd3cc",
+      "id": "f679b662-efdd-4405-a550-6238386066eb",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "1d7041d8-c1bd-4047-9b56-2008d7b86f3c",
+      "id": "4b52a83d-d1f9-406a-aaf2-d63a36b4a3d8",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "7676947e-5975-4994-8bb0-566dae498135",
+      "id": "c1f47133-25e7-48d3-9a81-04f788f460ce",
       "key": "oneforyou_transact_id",
       "value": ""
     }
