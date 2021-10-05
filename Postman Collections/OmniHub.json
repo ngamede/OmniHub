@@ -2001,11 +2001,11 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "3f966361-c743-49cc-8640-f4599f01ad1a",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "3f966361-c743-49cc-8640-f4599f01ad1a"
+                "type": "text/javascript"
               }
             }
           ],
@@ -2024,7 +2024,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 1000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"00000100001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{blt_electricity_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelElectricity\",\r\n  \"transactAmount\": 1000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n  \t\"MeterNumber\": \"00000100001\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "7fa658dc-0673-4cf7-bf9e-e8a64cdccd99",
+      "id": "730c5d0b-3ae6-4634-b9c8-6e47eb3a2730",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "758df4a0-3f81-4040-86c6-0b01736cdbef",
+      "id": "de23683f-ca12-4eb1-9b0e-a7c13240edb6",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "a3eb8c1f-cf29-4915-b1f7-5dedbce5b240",
+      "id": "1c6c1a8e-7dc9-4e85-902b-acdb0657ca10",
       "key": "oneforyou_transact_id",
       "value": ""
     }
