@@ -1513,24 +1513,24 @@
                 {
                   "listen": "prerequest",
                   "script": {
+                    "id": "250c5306-9425-44e7-9e2f-1edea6cb6b00",
                     "exec": [
                       ""
                     ],
-                    "type": "text/javascript",
-                    "id": "250c5306-9425-44e7-9e2f-1edea6cb6b00"
+                    "type": "text/javascript"
                   }
                 },
                 {
                   "listen": "test",
                   "script": {
+                    "id": "aeb01515-9437-40e2-bda4-f81688eabf5a",
                     "exec": [
                       "var jsonData = pm.response.json(); \r",
                       "pm.test(\"Verify Json values\", function () { \r",
                       "    pm.expect(jsonData.responseMessage).is.to.equal(\"Approved\"); \r",
                       "});"
                     ],
-                    "type": "text/javascript",
-                    "id": "aeb01515-9437-40e2-bda4-f81688eabf5a"
+                    "type": "text/javascript"
                   }
                 }
               ],
@@ -1549,7 +1549,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"transactGuid\": \"{{blt_topup_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtimeTopup\",\r\n  \"transactAmount\": 3500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0828295643\",\r\n    \"MobileNetwork\": \"{{MobileNetwork}}\",\r\n    \"Barcode\": \"222223333344444\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+                  "raw": "{\r\n  \"transactGuid\": \"{{blt_topup_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtimeTopup\",\r\n  \"transactAmount\": 3500,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0828295643\",\r\n    \"MobileNetwork\": \"{{MobileNetwork}}\",\r\n    \"Barcode\": \"222223333344444\"\r\n  },\r\n  \"productData\": null,\r\n \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/reprint"
               },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "86fd27fe-6102-4911-a51a-cb4dcb260ece",
+      "id": "cc99b0cb-0bb3-4e65-9a99-2096a18e3b95",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "5ae69906-f33f-4a2a-afaf-4c672f5bf0ed",
+      "id": "0402d543-324c-45db-bb1f-6c3c9fe9ee44",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "e368411b-83a2-41bf-98de-80a390df3955",
+      "id": "6218171d-968d-4ad9-936b-10cc2ee7ce6d",
       "key": "oneforyou_transact_id",
       "value": ""
     }
