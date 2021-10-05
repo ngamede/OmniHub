@@ -1711,22 +1711,22 @@
                 {
                   "listen": "prerequest",
                   "script": {
+                    "id": "f90b4812-187c-4840-993a-2b6db0b47f01",
                     "exec": [
                       ""
                     ],
-                    "type": "text/javascript",
-                    "id": "f90b4812-187c-4840-993a-2b6db0b47f01"
+                    "type": "text/javascript"
                   }
                 },
                 {
                   "listen": "test",
                   "script": {
+                    "id": "9a453e5b-c1ee-4c22-828f-1b31508040da",
                     "exec": [
                       "var jsonData = JSON.parse(responseBody);\r",
                       "postman.setEnvironmentVariable(\"blt_airtime_transact_guid\", jsonData.transactGuid)"
                     ],
-                    "type": "text/javascript",
-                    "id": "9a453e5b-c1ee-4c22-828f-1b31508040da"
+                    "type": "text/javascript"
                   }
                 }
               ],
@@ -1745,7 +1745,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtime\",\r\n  \"transactAmount\": 5500,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711051381\",\r\n    \"MobileNetwork\": \"Vodacom\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtime\",\r\n  \"transactAmount\": 5500,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711051381\",\r\n    \"MobileNetwork\": \"Vodacom\"\r\n  },\r\n  \"productData\": null,\r\n \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/purchase"
               },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "813f3da0-ff4b-4e5d-95df-c5fdf3b62844",
+      "id": "9dda68ff-dfb0-4475-9889-82d58c005025",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "44ae0389-8e39-45ef-8288-43e400bc6370",
+      "id": "90a1f27f-1da9-45d0-8316-cc18e8a47f07",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "8e574c27-50cc-49c8-b629-666e306a3b07",
+      "id": "dabf798e-068a-4523-98f1-f0450bb86918",
       "key": "oneforyou_transact_id",
       "value": ""
     }
