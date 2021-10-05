@@ -589,7 +589,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{ep_refund_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ReversalRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BillPayment\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n   \"OriginalTransactId\":\"{{ep_refund_transact_guid}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n"
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_refund_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ReversalRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BillPayment\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n   \"OriginalTransactId\":\"{{ep_refund_transact_guid}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n"
             },
             "url": "{{baseUrl}}/merchandise/refund"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "19cf71a9-6992-42df-aacc-4ca48d601d06",
+      "id": "7f3bc256-cf5e-4c04-811c-ec018e2086dc",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "137d5b6c-f221-45f1-8d7e-6a5b465cf0a3",
+      "id": "39eba644-d09a-4882-9f8a-3907865e5e4a",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "f2745f67-6ec7-49a5-8a19-56714606d0ad",
+      "id": "7cea64ec-2163-4c1b-8dc1-8456591a3b7e",
       "key": "oneforyou_transact_id",
       "value": ""
     }
