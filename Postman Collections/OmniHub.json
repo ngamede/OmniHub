@@ -1329,22 +1329,22 @@
                 {
                   "listen": "prerequest",
                   "script": {
+                    "id": "6523894d-ccf6-4254-99f6-93dad161c5d9",
                     "exec": [
                       ""
                     ],
-                    "type": "text/javascript",
-                    "id": "6523894d-ccf6-4254-99f6-93dad161c5d9"
+                    "type": "text/javascript"
                   }
                 },
                 {
                   "listen": "test",
                   "script": {
+                    "id": "971a31f2-5532-4f1c-8427-4dec9a245e93",
                     "exec": [
                       "var jsonData = JSON.parse(responseBody);\r",
                       "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
                     ],
-                    "type": "text/javascript",
-                    "id": "971a31f2-5532-4f1c-8427-4dec9a245e93"
+                    "type": "text/javascript"
                   }
                 }
               ],
@@ -1363,7 +1363,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 2500,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"VodacomBundles\",\r\n        \"MobileNumber\": \"0820012345\",\r\n        \"Barcode\": \"6009711050131\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"MobileMart\",\r\n    \"merchantName\": \"CC Foods\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}"
+                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 2500,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"VodacomBundles\",\r\n        \"MobileNumber\": \"0820012345\",\r\n        \"Barcode\": \"6009711050131\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/purchase"
               },
@@ -1375,22 +1375,22 @@
                 {
                   "listen": "prerequest",
                   "script": {
+                    "id": "33d6d76f-8639-4f2e-a7a0-dc947662b96a",
                     "exec": [
                       ""
                     ],
-                    "type": "text/javascript",
-                    "id": "33d6d76f-8639-4f2e-a7a0-dc947662b96a"
+                    "type": "text/javascript"
                   }
                 },
                 {
                   "listen": "test",
                   "script": {
+                    "id": "d5343fb3-0171-4547-b650-7281cf6f40ed",
                     "exec": [
                       "var jsonData = JSON.parse(responseBody);\r",
                       "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
                     ],
-                    "type": "text/javascript",
-                    "id": "d5343fb3-0171-4547-b650-7281cf6f40ed"
+                    "type": "text/javascript"
                   }
                 }
               ],
@@ -1409,7 +1409,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 3000,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"MTNBundles\",\r\n        \"MobileNumber\": \"0830012345\",\r\n        \"Barcode\": \"6009711053804\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"MobileMart\",\r\n    \"merchantName\": \"CC Foods\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}"
+                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 3000,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"MTNBundles\",\r\n        \"MobileNumber\": \"0830012345\",\r\n        \"Barcode\": \"6009711053804\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/purchase"
               },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "7e7be5d7-ab6b-4450-8d2f-25b1824af0ef",
+      "id": "729e9499-15d0-4a27-bb08-c7289e2acb35",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "f0b27d11-4ea4-4f55-a9c2-e03e0981f8d7",
+      "id": "a2fb731e-2de3-4159-9649-2b116ca0b379",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "9a259cec-6e5e-4d9a-a7e8-db895b3c1c3d",
+      "id": "7492ff50-379a-4fff-a927-af82c926a417",
       "key": "oneforyou_transact_id",
       "value": ""
     }
