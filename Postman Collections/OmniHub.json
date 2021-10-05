@@ -1803,21 +1803,21 @@
                 {
                   "listen": "prerequest",
                   "script": {
+                    "id": "b6e9de38-b220-4d3f-bcc4-5b3ceddfac07",
                     "exec": [
                       ""
                     ],
-                    "type": "text/javascript",
-                    "id": "b6e9de38-b220-4d3f-bcc4-5b3ceddfac07"
+                    "type": "text/javascript"
                   }
                 },
                 {
                   "listen": "test",
                   "script": {
+                    "id": "a770a680-0c30-4b94-9156-d58e45862921",
                     "exec": [
                       ""
                     ],
-                    "type": "text/javascript",
-                    "id": "a770a680-0c30-4b94-9156-d58e45862921"
+                    "type": "text/javascript"
                   }
                 }
               ],
@@ -1836,7 +1836,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"transactGuid\": \"{{blt_airtime_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtime\",\r\n  \"transactAmount\": 4900,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"Barcode\": \"6009711052418\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+                  "raw": "{\r\n  \"transactGuid\": \"{{blt_airtime_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"BlueLabelAirtime\",\r\n  \"transactAmount\": 4900,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"Barcode\": \"6009711052418\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/reprint"
               },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "8242d8c0-4a4e-4c34-95e2-9e9c90e7f79f",
+      "id": "721b69f9-6821-4635-a518-c802ce7f286c",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "84907336-b115-4943-9089-bbcd2a318d11",
+      "id": "27f719b3-ef05-44c3-9013-6732f2def622",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "054ff607-c4c0-4e7f-8a62-61945dbc1876",
+      "id": "67ff5259-c11b-491e-83ac-a09ddfa0d548",
       "key": "oneforyou_transact_id",
       "value": ""
     }
