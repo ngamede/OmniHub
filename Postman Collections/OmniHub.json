@@ -927,22 +927,22 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "f63a70cd-f162-4a6a-a06b-ae18a4cbae69",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "f63a70cd-f162-4a6a-a06b-ae18a4cbae69"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "8eb93d39-6bfd-462a-94d8-e5c75cff98b1",
                 "exec": [
                   "var jsonData = JSON.parse(responseBody);\r",
                   "postman.setEnvironmentVariable(\"oneforyou_pin\", jsonData.additionalData.ResponseData.PIN)"
                 ],
-                "type": "text/javascript",
-                "id": "8eb93d39-6bfd-462a-94d8-e5c75cff98b1"
+                "type": "text/javascript"
               }
             }
           ],
@@ -961,7 +961,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 90,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"Ecentric\",\r\n  \"merchantName\": \"NSG\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 90,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/deposit"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "80d28c05-7462-416c-a0e2-8d88f50d2bd3",
+      "id": "aee95e3a-a0ba-4441-b7a3-4421b82d7165",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "707a7bd3-055d-4178-8975-258bbc6d734a",
+      "id": "bd5697d9-ff22-47e2-a5a8-f99a6e831312",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "d3589579-af00-4fef-bb39-54b2943e41b2",
+      "id": "3492d499-9775-4fc1-b14f-53e82bd0ea0f",
       "key": "oneforyou_transact_id",
       "value": ""
     }
