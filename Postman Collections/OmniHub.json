@@ -3282,6 +3282,7 @@
             {
               "listen": "test",
               "script": {
+                "id": "02ca7b5e-bdb3-4045-9caf-319e8ef61cf3",
                 "exec": [
                   "pm.test(\"HTTP Status Code\", function() {",
                   "    pm.response.to.have.status(200);",
@@ -3292,8 +3293,7 @@
                   "    pm.expect(jsonData.responseMessage).to.eql(\"Approved\");",
                   "});"
                 ],
-                "type": "text/javascript",
-                "id": "02ca7b5e-bdb3-4045-9caf-319e8ef61cf3"
+                "type": "text/javascript"
               }
             }
           ],
@@ -3312,7 +3312,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{billpayment_transactGuid_approved_confirmation}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DSTV\",\r\n  \"transactAmount\": 200000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{billpayment_transactGuid_approved_confirmation}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Dual\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"DSTV\",\r\n  \"transactAmount\": 200000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"AccountNumber\": \"106987583\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"{{storeId}}\",\r\n  \"storeLocation\": \"{{storeLocation}}\",\r\n  \"terminalId\": \"{{terminalId}}\",\r\n  \"operatorId\": \"{{operatorId}}\",\r\n  \"basketId\": \"{{basketId}}\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase",
             "description": "Confirmation on Bluelabel"
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "553ea3d3-101b-474a-9aff-8e9df58886c6",
+      "id": "4c08706b-e439-4818-b3d3-958ede0ff1f1",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "c444a057-e017-48fd-a80a-48791bf7215d",
+      "id": "2ece5a56-d4ea-4dc0-b0fc-3392323b8688",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "75849004-061b-4caa-bed5-33c9670040df",
+      "id": "7eea3065-94c9-4e43-bf1d-c8acf99a769f",
       "key": "oneforyou_transact_id",
       "value": ""
     }
