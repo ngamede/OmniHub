@@ -601,21 +601,21 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "95303be9-6fc5-4205-be86-85f9fb6ebf47",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "95303be9-6fc5-4205-be86-85f9fb6ebf47"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "5d51e54c-cfba-4854-9c52-982b793bc1c8",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "5d51e54c-cfba-4854-9c52-982b793bc1c8"
+                "type": "text/javascript"
               }
             }
           ],
@@ -634,7 +634,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{ep_refund_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n   \"OriginalTransactId\":\"{{ep_refund_transact_guid}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n"
+              "raw": "{\r\n  \"transactGuid\": \"{{ep_refund_transact_guid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"ConfirmationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"EasyPayNumber\",\r\n  \"transactAmount\": 15000,\r\n  \"productId\": {\r\n   \"OriginalTransactId\":\"{{ep_refund_transact_guid}}\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}\r\n"
             },
             "url": "{{baseUrl}}/merchandise/refund"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "22f6a7cc-0153-4ed8-a2c4-97e26415f271",
+      "id": "28c03e82-f7dc-4367-bdf9-d4485a771cba",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "9473182e-a0fb-4e33-aedd-b913fa4d03f6",
+      "id": "3f8abd75-8405-46de-9936-a2fbc8f80f60",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "71b06d7a-133c-4f81-bf0a-e808d0e0a247",
+      "id": "869eef0c-632b-41bd-8407-c3b6925e762b",
       "key": "oneforyou_transact_id",
       "value": ""
     }
