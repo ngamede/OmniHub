@@ -646,22 +646,22 @@
             {
               "listen": "prerequest",
               "script": {
+                "id": "695b81f4-3c9d-4aae-acab-f342e873a980",
                 "exec": [
                   ""
                 ],
-                "type": "text/javascript",
-                "id": "695b81f4-3c9d-4aae-acab-f342e873a980"
+                "type": "text/javascript"
               }
             },
             {
               "listen": "test",
               "script": {
+                "id": "a4cafc54-c498-49e8-8206-0488c89b3d43",
                 "exec": [
                   "var jsonData = JSON.parse(responseBody);\r",
                   "postman.setEnvironmentVariable(\"blt_topup_transact_guid\", jsonData.transactGuid)"
                 ],
-                "type": "text/javascript",
-                "id": "a4cafc54-c498-49e8-8206-0488c89b3d43"
+                "type": "text/javascript"
               }
             }
           ],
@@ -680,7 +680,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"TrafficFine\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"NoticeNumber\",\r\n    \"BillPaymentIdValue\": \"10/00001/141/000153\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"CC Foods\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"TrafficFine\",\r\n  \"transactAmount\": 11000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"BillPaymentIdType\": \"NoticeNumber\",\r\n    \"BillPaymentIdValue\": \"10/00001/141/000153\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"MobileMart\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/purchase"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "28c03e82-f7dc-4367-bdf9-d4485a771cba",
+      "id": "f3ee59b0-7518-455f-babb-56114388a27d",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "3f8abd75-8405-46de-9936-a2fbc8f80f60",
+      "id": "328e2cf6-af71-432c-a716-ded5ce7271cc",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "869eef0c-632b-41bd-8407-c3b6925e762b",
+      "id": "929c4100-2b25-4b46-8e13-484bcf242a19",
       "key": "oneforyou_transact_id",
       "value": ""
     }
