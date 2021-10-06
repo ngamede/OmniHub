@@ -1791,7 +1791,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageMode\": \"Single\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"Airtime\",\r\n  \"transactAmount\": 5000,\r\n   \"productId\": {\r\n    \"Barcode\": \"6009711052135\",\r\n    \"MobileNetwork\": \"CellC\"\r\n  },\r\n  \"productData\": null,\r\n\"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"Airtime\",\r\n    \"transactAmount\": 5000,\r\n    \"productId\": {\r\n        \"Barcode\": \"6009711052135\",\r\n        \"MobileNetwork\": \"CellC\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"{{aggregatorName}}\",\r\n    \"merchantName\": \"{{chainName}}\",\r\n    \"storeId\": \"880000000000001\",\r\n    \"storeLocation\": \"StoreLocation\",\r\n    \"terminalId\": \"88000101\",\r\n    \"operatorId\": \"OP007\",\r\n    \"basketId\": \"569\",\r\n    \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/purchase"
               },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "f921484b-4a34-40ca-bda0-4402d8309274",
+      "id": "2de487ce-5316-495f-9831-a13901cc5103",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "37e56422-7ef8-44b3-99f9-e586e87bc101",
+      "id": "9a769c83-9a31-477c-8370-f57fb51c805c",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "6dadf9df-28cd-4eec-9133-8f158c54c860",
+      "id": "e851b359-8461-4cc8-95fe-5f68acbf905b",
       "key": "oneforyou_transact_id",
       "value": ""
     }
