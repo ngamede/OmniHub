@@ -1,4 +1,9 @@
 # Starter pipeline
+- task: GitDownloader@0
+  inputs:
+    RepositoryUrl: 'https://github.com/ngamede/OmniHub'
+    RepositoryPath: 'https://github.com/ngamede/OmniHub'
+    BranchTag: 'master'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
