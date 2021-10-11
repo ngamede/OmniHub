@@ -1,5 +1,5 @@
 # Starter pipeline
-- task: GitDownloader@0
+
   inputs:
     RepositoryUrl: 'https://github.com/ngamede/OmniHub'
     RepositoryPath: 'https://github.com/ngamede/OmniHub'
