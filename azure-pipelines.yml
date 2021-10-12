@@ -1,7 +1,7 @@
 # Starter pipeline
 - task: DownloadGitHubRelease@0
   inputs:
-    connection: 'Postman'
+    connection: 'ngamede'
     userRepository: 'ngamede/OmniHub'
     defaultVersionType: 'latest'
     downloadPath: '$(System.ArtifactsDirectory)'
