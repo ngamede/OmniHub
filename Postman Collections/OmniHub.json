@@ -915,7 +915,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 2000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
+              "raw": "{\r\n  \"transactGuid\": \"{{transactGuid}}\",\r\n  \"transactDateTime\": \"{{transactDateTime}}\",\r\n  \"messageType\": \"AuthorizationRequest\",\r\n  \"messageDateTime\": \"{{messageDateTime}}\",\r\n  \"merchandiseType\": \"OneForYou\",\r\n  \"transactAmount\": 5000,\r\n  \"tenderData\": null,\r\n  \"productId\": {\r\n    \"MobileNumber\": \"0740741989\"\r\n  },\r\n  \"productData\": null,\r\n  \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n  \"storeId\": \"880000000000001\",\r\n  \"storeLocation\": \"StoreLocation\",\r\n  \"terminalId\": \"88000101\",\r\n  \"operatorId\": \"OP007\",\r\n  \"basketId\": \"569\",\r\n  \"additionalData\": null\r\n}"
             },
             "url": "{{baseUrl}}/merchandise/deposit"
           },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "7893d8b2-d0f6-4c38-9179-89914c09ec5b",
+      "id": "0f2d99e2-4ba0-46a0-9656-85644223a2cc",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "df4168cc-eefe-432c-9123-5fbe3cb2005a",
+      "id": "acdcf878-d8b0-4a52-b7b7-bbd0a819b448",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "3af8a122-bbc2-480b-a8b2-e879be7931bc",
+      "id": "de1aaae3-4d93-4abd-b12b-e243be93bccb",
       "key": "oneforyou_transact_id",
       "value": ""
     }
