@@ -1363,7 +1363,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 2500,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"VodacomBundles\",\r\n        \"MobileNumber\": \"0820012345\",\r\n        \"Barcode\": \"6009711050131\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}"
+                  "raw": "{\r\n    \"transactGuid\": \"{{transactGuid}}\",\r\n    \"transactDateTime\": \"{{transactDateTime}}\",\r\n    \"messageType\": \"AuthorizationRequest\",\r\n    \"messageMode\": \"Single\",\r\n    \"messageDateTime\": \"{{messageDateTime}}\",\r\n    \"merchandiseType\": \"BlueLabelBundleTopup\",\r\n    \"transactAmount\": 2900,\r\n    \"tenderData\": null,\r\n    \"productId\": {\r\n        \"MobileNetwork\": \"VodacomBundles\",\r\n        \"MobileNumber\": \"0820012345\",\r\n        \"Barcode\": \"6009711052968\"\r\n    },\r\n    \"productData\": null,\r\n    \"merchantGroup\": \"{{aggregatorName}}\",\r\n  \"merchantName\": \"{{chainName}}\",\r\n    \"storeId\": \"{{storeId}}\",\r\n    \"storeLocation\": \"{{storeLocation}}\",\r\n    \"terminalId\": \"{{terminalId}}\",\r\n    \"operatorId\": \"{{operatorId}}\",\r\n    \"basketId\": \"{{basketId}}\",\r\n    \"additionalData\": null\r\n}"
                 },
                 "url": "{{baseUrl}}/merchandise/purchase"
               },
@@ -3573,17 +3573,17 @@
   ],
   "variable": [
     {
-      "id": "0f2d99e2-4ba0-46a0-9656-85644223a2cc",
+      "id": "8566f5e5-4435-4690-83ec-c8b4423451a5",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "acdcf878-d8b0-4a52-b7b7-bbd0a819b448",
+      "id": "6d6f5dd3-8d4c-41f3-b83b-b03e9945721f",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "de1aaae3-4d93-4abd-b12b-e243be93bccb",
+      "id": "cd6878d0-3238-4bd2-a4cf-42ab36c4b174",
       "key": "oneforyou_transact_id",
       "value": ""
     }
