@@ -3495,6 +3495,7 @@
     {
       "listen": "prerequest",
       "script": {
+        "id": "7de367cd-314a-41d5-a3ac-e6a20cc686c7",
         "type": "text/javascript",
         "exec": [
           "pm.environment.set(\"merchantName\", \"Test2\");",
@@ -3549,13 +3550,13 @@
           "pm.environment.set(\"messageDateTime\", dateTime);",
           "pm.environment.set(\"transactDateTime\", dateTime);",
           ""
-        ],
-        "id": "b15082e0-f023-4779-97b8-ff86023697c8"
+        ]
       }
     },
     {
       "listen": "test",
       "script": {
+        "id": "19799367-7dd7-4eb5-9e56-2bf5eec8ada1",
         "type": "text/javascript",
         "exec": [
           "pm.test(\"Response Content-Type\", function () {",
@@ -3566,25 +3567,29 @@
           "pm.test(\"Response Time\", function() {",
           "    pm.expect(pm.response.responseTime).to.be.below(20000);",
           "});"
-        ],
-        "id": "6e72b1cc-92a7-4c02-bbe2-a3c6917487dd"
+        ]
       }
     }
   ],
   "variable": [
     {
-      "id": "bb498893-7b8b-48c5-916d-5c2166803071",
+      "id": "8f7dddf1-eda9-4d14-89d5-351000d46c96",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "7efd1419-771d-4edd-91c6-5129a1101d2d",
+      "id": "d538bdc1-619f-4d6c-9fa4-0e413a3d2b37",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "473c0b8d-c315-43bb-b94f-bf99fe23717a",
+      "id": "6f90d251-2ca7-4f50-92a4-9dd2d6d0aead",
       "key": "oneforyou_transact_id",
+      "value": ""
+    },
+    {
+      "id": "9fd2d2b4-5c50-41be-a8f6-c86740eba79d",
+      "key": "baseurl",
       "value": ""
     }
   ]
