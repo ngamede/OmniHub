@@ -27,7 +27,7 @@
                 "id": "6e34c7ae-ded4-4717-9b3b-ddb161ab2839",
                 "exec": [
                   "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(1500);",
+                  "    pm.response.to.have.status(200);",
                   "});"
                 ],
                 "type": "text/javascript"
@@ -3575,22 +3575,22 @@
   ],
   "variable": [
     {
-      "id": "13578ca0-9876-4637-a423-a8f831a92c33",
+      "id": "d92e12f7-33e9-42dc-b583-f124380c499e",
       "key": "oneforyou_pin",
       "value": ""
     },
     {
-      "id": "35ca270b-cd46-471d-95b1-fe860ff3ce59",
+      "id": "e10b2462-1708-464f-ae74-52e96dd561ce",
       "key": "oneforyou_transact_guid",
       "value": ""
     },
     {
-      "id": "a2bc653d-bc46-46c0-a1b5-69cd359c25c1",
+      "id": "e8ea5739-94ee-43f2-9c15-b36b91f56bb4",
       "key": "oneforyou_transact_id",
       "value": ""
     },
     {
-      "id": "c7672dde-a7fa-4b50-bc96-4bb318ab5df9",
+      "id": "cbf279a5-c4c2-42c6-819f-d557c4e484c1",
       "key": "baseurl",
       "value": ""
     }
